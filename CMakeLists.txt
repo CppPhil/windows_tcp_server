@@ -8,7 +8,7 @@ endif()
 
 project("windows_tcp_server")
 
-add_executable(windows_tcp_server "main.cpp" "format_error.cpp" "socket_library_manager.cpp" "exception.cpp" "to_utf8.cpp" "to_utf16.cpp" "win_exception.cpp")
+add_executable(windows_tcp_server "main.cpp" "format_error.cpp" "socket_library_manager.cpp" "exception.cpp" "to_utf8.cpp" "to_utf16.cpp" "win_exception.cpp"  "launch_client_handler.cpp")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET windows_tcp_server PROPERTY CXX_STANDARD 20)
