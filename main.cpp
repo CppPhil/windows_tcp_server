@@ -1,4 +1,5 @@
-﻿#include <string>
+﻿#include <iostream>
+#include <string>
 
 #include <WS2tcpip.h>
 #include <WinSock2.h>
@@ -79,6 +80,7 @@ int main()
         L"Server socket failed to start listening");
     }
 
+    std::cout << std::format("Listening on port {}.\n", wts::port);
     SOCKET clientSocket{INVALID_SOCKET};
 
     while ((clientSocket = accept(serverSocket, nullptr, nullptr))
