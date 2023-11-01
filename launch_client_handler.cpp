@@ -14,7 +14,6 @@ void threadFunction(SOCKET clientSocket)
   auto socketCloser{finally([&clientSocket] {
     shutdown(clientSocket, SD_BOTH);
     closesocket(clientSocket);
-    clientSocket = INVALID_SOCKET;
   })};
 
   static constexpr std::size_t bufferSize{512};

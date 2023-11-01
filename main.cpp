@@ -35,7 +35,6 @@ int main()
     auto addrinfoListCleaner{wts::finally([&addrinfoList] {
       if (addrinfoList != nullptr) {
         freeaddrinfo(addrinfoList);
-        addrinfoList = nullptr;
       }
     })};
 

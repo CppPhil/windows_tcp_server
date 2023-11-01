@@ -1,5 +1,3 @@
-#include <winsock.h>
-
 #include "socket_library_manager.hpp"
 #include "win_exception.hpp"
 
