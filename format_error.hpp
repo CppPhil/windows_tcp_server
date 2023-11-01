@@ -3,7 +3,6 @@
 
 #include <Windows.h>
 
-namespace wts
-{
+namespace wts {
 std::wstring formatError(DWORD errorCode);
 } // namespace wts
